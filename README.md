@@ -2,7 +2,11 @@
 
 Forked from [this repo](https://github.com/altryne/chatGPT-telegram-bot)
 
-[![CleanShot 2022-12-02 at 16 08 27](https://user-images.githubusercontent.com/463317/205404516-56ea908e-dd31-4c53-acb7-15f9f6ed379f.gif)](https://twitter.com/altryne/status/1598822052760195072)
+
+https://user-images.githubusercontent.com/22678055/210846293-cc599952-2765-4e0d-94cf-90fe38dbf3b3.mp4
+
+
+
 
 This is a Telegram bot that lets you chat with the [chatGPT](https://github.com/openai/gpt-3) language model using your local browser, and uses the [Carrot](https://www.banana.dev/blog/banana-launches-carrot) model to add image support to chatGPT. The bot uses Playwright to run chatGPT in Chromium, and can parse code and text, as well as send messages. It also includes a `/draw` command that allows you to generate pictures using stable diffusion. More features are coming soon.
 
