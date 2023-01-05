@@ -8,10 +8,10 @@ This is a Telegram bot that lets you chat with the [chatGPT](https://github.com/
 
 ## Features
 
-- [ ] Chat with chatGPT from your Telegram on the go
-- [ ] Send images to chatGPT and ask questions/talk about the image
-- [ ] `/draw` pictures using stable diffusion (version 0.0.2)
-- [ ] `/browse` give chatGPT access to Google (version 0.0.3)
+- Chat with chatGPT from your Telegram on the go
+- Send images to chatGPT and ask questions/talk about the image
+- `/draw` pictures using stable diffusion (version 0.0.2)
+- `/browse` give chatGPT access to Google (version 0.0.3)
 
 ## How to Install
 
@@ -47,6 +47,14 @@ This is a Telegram bot that lets you chat with the [chatGPT](https://github.com/
 
 1. Sign up at [app.banana.dev](https://app.banana.dev)
 
+2. Go to the deploy tab, and select Carrot (Image QA) 
+<img width="1122" alt="image" src="https://user-images.githubusercontent.com/22678055/210836280-15ea1240-4270-4512-ae04-74872b8bfd6c.png">
+
+3. Go into the model card, and copy your model key
+<img width="684" alt="image" src="https://user-images.githubusercontent.com/22678055/210836596-9f15d4f7-0d3e-4438-9935-bf1ff06a092d.png">
+
+4. Define the banana model key and api key in the .env file
+
 ### Step 6: Set up your API keys
 
 1. Copy the `.env.example` file and rename the copy to `.env`.
@@ -79,6 +87,8 @@ services:
     environment:
       - TELEGRAM_API_KEY=
       - TELEGRAM_USER_ID= #Use this with your user ID to restrict usage only to your account
+      - BANANA_API_KEY = #For image captioning
+      - BANANA_MODEL_KEY = #For image captioning
       - STABILITY_API_KEY= #use this if you want the bot to draw things with stability AI as well
       - SERP_API_KEY= #add this from serpapi if you want to enable the google search feature
       - OPEN_AI_EMAIL= #openai login email. Needed for autologin in headless mode
@@ -87,5 +97,4 @@ services:
 
 ## Credits
 
-- Creator [@Altryne](https://twitter.com/altryne/status/1598902799625961472) on Twitter
-- Based on [Daniel Gross's whatsapp gpt](https://github.com/danielgross/whatsapp-gpt) package.
+- Based on the [repo](https://github.com/altryne/chatGPT-telegram-bot) by [@Altryne](https://twitter.com/altryne/status/1598902799625961472) on Twitter
